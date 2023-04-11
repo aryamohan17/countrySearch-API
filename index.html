@@ -11,14 +11,14 @@
     <title>Country search</title>
 </head>
 
-<body style="background-color: rgb(131, 131, 182);">
-    <div class="container w-50 mt-5 p-4 rounded-2 text-center" style="background-color: rgb(9, 9, 80);">
-        <h1 class="text-center text-white">Home Page</h1>
-        <input type="text" id="inp_id" class="form-control">
+<body style="background-image: url(./images/world_img.jpeg);">
+    <div class="container w-50 mt-5 p-4 rounded-2 bg-primary text-center"  >
+        <h1 class="text-center text-white">Country details</h1>
+        <input type="text" id="inp_id" class="form-control" placeholder="Enter your country name">
         <button type="button" onclick="searchItem()" class="mt-4 mb-2 btn btn-outline-light">Search</button>
     </div>
     <div id="dataList" class="container w-50 mt-5 p-4 rounded-2"
-        style="background-color: rgb(88, 88, 160);">
+        >
     </div>
 </body>
 <script>
@@ -38,7 +38,7 @@
         console.log(countryName);
         dataList.innerHTML = `
         <div class="card">
-        <img src="${flag}" class="card-img-top" alt="...">
+        <img src="${flag}" height="300" class="card-img-top" alt="...">
         <div class="card-body text-center">
             <ul class="list-group">
                 <li class="list-group-item"><b>Conutry name</b> ${countryName}</li>
